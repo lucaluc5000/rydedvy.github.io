@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Ryde</title>
+    <style>
+      :root {
+        --bg-gradient: linear-gradient(160deg, #2b0a0a, #0a1a2b);
+        --bg-alt: #161b22;
+        --border: #30363d;
+        --text: #c9d1d9;
+        --muted: #8b949e;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-gradient);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        border-bottom: 1px solid var(--border);
+        background: rgba(13, 17, 23, 0.8);
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .topbar {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+      }
+      .logo {
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: -0.01em;
+      }
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.85rem;
+      }
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        padding: 0.3rem 0.75rem;
+        transition: all 0.25s ease;
+      }
+      .nav-links a:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.05);
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 4rem 1rem 2rem;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      p {
+        max-width: 600px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 1.5rem 1rem 2.5rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="logo">ryde-dev</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>About this site</h1>
+      <p>Purely made for displaying written work and showcasing projects I'm working on. More sections will be added here as the site grows. This page exists as a space to explain the purpose and direction of my creative projects while keeping things simple and clean.</p>
+    </main>
+    <footer>
+      © 2025 Ryde — Built on Zero Experience.
+    </footer>
+  </body>
+</html>
